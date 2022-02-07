@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="estate_my_property_action" model="ir.actions.act_window">
+        <field name="name">Property</field>
+        <field name="res_model">estate.property.myproperty</field>
+        <field name="view_mode">tree,form,calendar,graph,pivot</field>
+        <field name="context">{'search_default_my_property_search' : 1}</field>
+
+    </record>
+
+    <menuitem id="menu_real_estate_my_property" name="My Property" parent="menu_real_estate_root"/>
+    <menuitem id="menu_real_estate_my_property_action" parent="menu_real_estate_my_property" action="estate_my_property_action" />
+
+
+</odoo>
